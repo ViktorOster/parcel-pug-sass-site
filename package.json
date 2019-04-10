@@ -6,7 +6,6 @@
   "scripts": {
     "build": "npx parcel build ./src/views/index.pug --public-url ./",
     "watch": "npx parcel ./src/views/index.pug",
-    "gh-add-dist": "git add dist && git commit -m \"Updated dist subtree\"",
     "gh-deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "",
