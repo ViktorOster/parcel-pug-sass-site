@@ -1,0 +1,22 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "modules/navbar.scss";
+
+html {
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 4rem;
+    color: green;
+}
+body {
+    background: #ccc;
+}
+
+main {
+    padding-top: $height-navbar;
+}
+.content {
+    max-width: $width-content;
+    margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+$navbar-padding: 20px;
+
+.navbar__container {
+    background: $c-navbar;
+    width: 100vw;
+    height: $height-navbar;
+    position: fixed;
+    top: 0;
+}
+.navbar {
+    height: $height-navbar;
+    ul {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    ul > li {
+        display: inline-block;
+    }
+    ul > li > a {
+        height: 100%;
+        padding: $navbar-padding;
+        cursor: pointer;
+        &:hover {
+            background: darken($c-navbar, 5);
+        }
+    }
+
+}
+.navbar__logo {
+    font-size: 1.5rem;
+    display: flex;
+    float: left;
+    height: 100%;
+    align-items: center;
+    padding: 0 $navbar-padding;
+
+    a {
+        cursor: pointer;
+    }
+}

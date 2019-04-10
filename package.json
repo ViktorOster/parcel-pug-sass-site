@@ -1,0 +1,21 @@
+{
+  "name": "pug-sass-parcel-test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx parcel build ./src/views/index.pug --public-url ./",
+    "watch": "npx parcel ./src/views/index.pug",
+    "gh-add-dist": "git add dist && git commit -m \"Updated dist subtree\"",
+    "gh-deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.10.3"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "sass": "^1.15.1"
+  }
+}
